@@ -1,0 +1,47 @@
+@font-face{font-family:'Calluna';
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+   }
+   body {
+       background: url(//subtlepatterns.com/patterns/scribble_light.png);
+     font-family: Calluna, Arial, sans-serif;
+     min-height: 1000px;
+     background-color: #000000ec;
+   }
+   #columns {
+       column-width: 320px;
+       column-gap: 20px;
+       width: 90%;
+       max-width:100vw;
+       margin: 50px auto;
+   }
+   
+   div#columns figure {
+       background: #fefefe;
+       border: 2px solid #fcfcfc;
+       box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+       margin: 4px 3px 15px;
+       padding: 15px;
+       padding-bottom: 10px;
+       display: inline-block;
+  
+   }
+   
+   div#columns figure img {
+       width: 100%; height: auto;
+       border-bottom: 1px solid #ccc;
+       padding-bottom: 15px;
+       margin-bottom: 5px;
+       cursor: pointer;
+   }
+   
+   div#columns figure figcaption {
+     font-size: .9rem;
+       color: #1d1c1c;
+     line-height: 1.5;
+     font-weight: 600;
+     font-size: medium;
+   }
+   @media screen and (max-width: 750px) { 
+     #columns { column-gap: 0px; }
+     #columns figure { width: 100%; }
+   }
